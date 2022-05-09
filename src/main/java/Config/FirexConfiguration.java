@@ -21,6 +21,7 @@ public class FirexConfiguration extends Configuration {
     @JsonProperty
     private String firstName;
 
+
     @JsonProperty
     private String lastName;
 
