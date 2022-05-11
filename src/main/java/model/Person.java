@@ -8,16 +8,17 @@ import lombok.*;
  */
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode
 public class Person {
 
     @JsonProperty
-    private final String firstName;
+    private String firstName;
 
     @JsonProperty
-    private final String lastName;
+    private String lastName;
 
     @Override
     public String toString() {

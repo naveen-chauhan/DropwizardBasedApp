@@ -44,6 +44,7 @@
   <properties>
     <google.guice.version>3.0</google.guice.version>
     <dropwizard.core.version>0.7.0</dropwizard.core.version>
+    <dropwizard.core.version.v2>2.0.0-rc9</dropwizard.core.version.v2>
     <maven.compiler.source>8</maven.compiler.source>
     <dropwizard.guice.version>0.7.0.2</dropwizard.guice.version>
     <lombok.version>1.18.24</lombok.version>

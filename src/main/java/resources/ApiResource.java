@@ -3,8 +3,8 @@ package resources;
 import com.codahale.metrics.annotation.Timed;
 import model.Person;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+//import javax.inject.Inject;
+//import javax.inject.Named;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.Optional;
@@ -17,13 +17,17 @@ import java.util.Optional;
 @Produces(MediaType.APPLICATION_JSON)
 public class ApiResource {
 
-    @Inject
+    //    @Inject
     private final String defaultFirstName;
 
-    @Inject
+    //    @Inject
     private final String defaultLastName;
 
-    public ApiResource(@Named("firstName") String defaultFirstName, @Named("lastName") String defaultLastName) {
+    public ApiResource(
+//            @Named("firstName")
+            String defaultFirstName,
+//                       @Named("lastName")
+            String defaultLastName) {
         this.defaultFirstName = defaultFirstName;
         this.defaultLastName = defaultLastName;
     }
