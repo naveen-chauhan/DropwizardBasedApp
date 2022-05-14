@@ -12,10 +12,11 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <dropwizard.core.version>0.7.0</dropwizard.core.version>
-        <dropwizard.core.version.v2>2.0.0-rc9</dropwizard.core.version.v2>
+        <dropwizard.core.version.new>2.0.0-rc9</dropwizard.core.version.new>
         <lombok.version>1.18.24</lombok.version>
         <google.guice.version>3.0</google.guice.version>
-        <dropwizard.guice.version>0.7.0.2</dropwizard.guice.version>
+        <dropwizard.guice.version>0.8.4.0</dropwizard.guice.version>
+        <dropwizard.guice.version.new>1.0.6.0</dropwizard.guice.version.new>
     </properties>
 
     <dependencies>
@@ -24,26 +25,23 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+<!--        Below dropwizard-guice Dependency creating Issue - Class Not Found Error-->
 <!--        <dependency>-->
-<!--            <groupId>io.dropwizard</groupId>-->
-<!--            <artifactId>dropwizard-core</artifactId>-->
-<!--            <version>${dropwizard.core.version}</version>-->
+<!--            <groupId>com.hubspot.dropwizard</groupId>-->
+<!--            <artifactId>dropwizard-guice</artifactId>-->
+<!--            <version>${dropwizard.guice.version.new}</version>-->
 <!--        </dependency>-->
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
-            <version>${dropwizard.core.version.v2}</version>
+            <version>${dropwizard.core.version.new}</version>
+<!--            <version>${dropwizard.core.version}</version>-->
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.google.inject</groupId>-->
-<!--            <artifactId>guice</artifactId>-->
-<!--            <version>${google.guice.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.hubspot.dropwizard</groupId>-->
-<!--            <artifactId>dropwizard-guice</artifactId>-->
-<!--            <version>${dropwizard.guice.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${google.guice.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

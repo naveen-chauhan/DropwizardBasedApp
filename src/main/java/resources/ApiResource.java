@@ -35,10 +35,8 @@ public class ApiResource {
     @GET
     @Timed
     public String getName(@QueryParam("firstName")
-//                          @DefaultValue("Firex")
                                   Optional<String> firstName,
                           @QueryParam("lastName")
-//                          @DefaultValue("IIT ISM")
                                   Optional<String> lastName) {
         Person person = new Person(firstName.orElse(defaultFirstName), lastName.orElse(defaultLastName));
 
