@@ -1,6 +1,8 @@
 package resources;
 
 import com.codahale.metrics.annotation.Timed;
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import model.Person;
 
 //import javax.inject.Inject;
@@ -17,16 +19,16 @@ import java.util.Optional;
 @Produces(MediaType.APPLICATION_JSON)
 public class ApiResource {
 
-    //    @Inject
+    @Inject
     private final String defaultFirstName;
 
-    //    @Inject
+    @Inject
     private final String defaultLastName;
 
     public ApiResource(
-//            @Named("firstName")
+            @Named("firstName")
             String defaultFirstName,
-//                       @Named("lastName")
+                       @Named("lastName")
             String defaultLastName) {
         this.defaultFirstName = defaultFirstName;
         this.defaultLastName = defaultLastName;

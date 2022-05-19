@@ -10,7 +10,6 @@ public class ServiceHealthCheck extends HealthCheck {
     @Override
     protected Result check() throws Exception {
         return Result.healthy();
-
     }
 
 }

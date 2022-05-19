@@ -4,7 +4,7 @@ import healthcheck.ServiceHealthCheck;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-//import modules.FirexModule;
+import modules.FirexModule;
 import resources.ApiResource;
 
 /**
