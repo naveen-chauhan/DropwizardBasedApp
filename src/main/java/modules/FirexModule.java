@@ -1,4 +1,3 @@
-/*
 package modules;
 
 import Config.FirexConfiguration;
@@ -8,10 +7,9 @@ import com.google.inject.Provides;
 
 import javax.inject.Named;
 
-*/
 /**
  * @author naveen.chauhan on 23/04/22
- *//*
+ */
 
 public class FirexModule implements Module {
 
@@ -31,4 +29,3 @@ public class FirexModule implements Module {
         return firexConfiguration.getLastName();
     }
 }
-*/
